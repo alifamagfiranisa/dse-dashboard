@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSE Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #1f4e78;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .dashboard-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dashboard-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .dashboard-card h2 {
+            color: #1f4e78;
+        }
+
+        .dashboard-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .dashboard-card a {
+            display: inline-block;
+            background: #1f4e78;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            margin-top: 10px;
+        }
+
+        .dashboard-card a:hover {
+            background: #143654;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DSE DASHBOARD</h1>
+        <p>Dashboard Informasi dan Analisis DSE Factory Outlet</p>
+    </header>
+
+    <div class="container">
+
+        <h2>Pilih Dashboard</h2>
+
+        <div class="dashboard-list">
+
+            <div class="dashboard-card">
+                <h2>Dashboard Penjualan</h2>
+                <p>
+                    Informasi dan analisis penjualan
+                    barang berdasarkan cabang dan kategori.
+                </p>
+                <a href="penjualan.html">Buka Dashboard</a>
+            </div>
+
+            <div class="dashboard-card">
+                <h2>Dashboard Stok Konsinyasi</h2>
+                <p>
+                    Informasi stok barang konsinyasi
+                    berdasarkan supplier dan cabang.
+                </p>
+                <a href="konsinyasi.html">Buka Dashboard</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        DSE Factory Outlet | Internal Dashboard
+    </footer>
+
+</body>
+</html>
